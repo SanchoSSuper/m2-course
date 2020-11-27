@@ -1,0 +1,37 @@
+.fmwejkghwhgewngjwegjwegweghewgiewhgiewhgiweh
+<?php
+/**
+ * @var Complex\My\Block\Main $block
+ */
+echo $block->getName();
+?>
+
+
+<form>
+    <p>Input author
+        <input type="text" name="author">
+    </p>
+    <p>Input title
+        <input type="text" name="title">
+    </p>
+    <p>Input description
+        <textarea
+            name="description">
+        </textarea>
+    </p>
+    <p>Input content
+        <textarea
+            name="content">
+        </textarea>
+    </p>
+    <p>Check status
+        <input type="checkbox" name="status">
+    </p>
+    <p>Check
+        <input type="checkbox" name="enabled">
+    </p>
+    <button
+        type="submit" value="Submit" onclick="<?php $block->getName() ?>" >Submit
+    </button>
+</form>
+

@@ -1,0 +1,18 @@
+{
+    "complex_blog_index": {
+        "column": {
+            "entity_id": true,
+            "author": true,
+            "title": true,
+            "description": true,
+            "content": true,
+            "status": true,
+            "enabled": true,
+            "created_at": true,
+            "updated_at": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
