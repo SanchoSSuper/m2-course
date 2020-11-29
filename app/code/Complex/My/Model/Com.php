@@ -23,7 +23,7 @@ use Magento\Framework\Model\AbstractModel;
  * @SuppressWarnings(PHPMD.ExcessivePublicCount)
  * @since 100.0.2
  */
-class Page extends AbstractModel
+class Com extends AbstractModel
 {
     /**
      * Initialize resource model
@@ -32,6 +32,6 @@ class Page extends AbstractModel
      */
     protected function _construct()
     {
-        $this->_init(\Complex\My\Model\ResourceModel\Page::class);
+        $this->_init(\Complex\My\Model\ResourceModel\Com::class);
     }
 }

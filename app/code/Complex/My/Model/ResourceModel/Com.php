@@ -23,7 +23,7 @@ use Magento\Store\Model\StoreManagerInterface;
  * Cms page mysql resource
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
-class Page extends AbstractDb
+class Com extends AbstractDb
 {
     /**
      * Initialize resource model

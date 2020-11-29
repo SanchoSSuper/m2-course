@@ -24,13 +24,12 @@ class Redirect extends \Magento\Framework\App\Action\Action implements HttpGetAc
     public function __construct(
         Context $context,
         RequestInterface $request,
-        PageFactory $pageFactory,
-        \Magento\Framework\Controller\ResultFactory $resultFactory)
+        PageFactory $pageFactory
+    )
     {
         parent::__construct($context);
         $this->request = $request;
         $this->pageFactory = $pageFactory;
-        $this->resultFactory = $resultFactory;
     }
 
     public function execute()
