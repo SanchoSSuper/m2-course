@@ -1,13 +1,10 @@
-.fmwejkghwhgewngjwegjwegweghewgiewhgiewhgiweh
 <?php
 /**
  * @var Complex\My\Block\Main $block
  */
-echo $block->getName();
 ?>
 
-
-<form>
+<form action="/complex/act/redirect" method="get">
     <p>Input author
         <input type="text" name="author">
     </p>
@@ -27,11 +24,11 @@ echo $block->getName();
     <p>Check status
         <input type="checkbox" name="status">
     </p>
-    <p>Check
+    <p>Check enabled
         <input type="checkbox" name="enabled">
     </p>
     <button
-        type="submit" value="Submit" onclick="<?php $block->getName() ?>" >Submit
+        type="submit" value="Submit">Submit
     </button>
 </form>
 
