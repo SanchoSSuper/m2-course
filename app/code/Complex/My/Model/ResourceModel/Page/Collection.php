@@ -17,8 +17,6 @@ class Collection extends AbstractCollection
     protected function _construct()
     {
         $this->_init(\Complex\My\Model\Page::class, \Complex\My\Model\ResourceModel\Page::class);
-        $this->_map['fields']['page_id'] = 'main_table.page_id';
-        $this->_map['fields']['store'] = 'store_table.store_id';
     }
 
     public function addStoreFilter($store, $withAdmin = true)
