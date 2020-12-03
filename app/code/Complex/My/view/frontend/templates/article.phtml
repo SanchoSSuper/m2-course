@@ -8,14 +8,20 @@
 
 <?php if( $article = $block->view() ): ?>
     <div>
-    <strong><?php echo "Authors name: "; echo $article->getAuthor(); ?></strong>
+    <strong><?php echo "Authors name: ".$article->getAuthor(); ?></strong>
     <span><?php echo $block->getFormatDate($article->getCreatedAt()); ?></span>
     </div>
-    <h3><?php echo "Title: "; echo $article->getTitle(); ?></h3>
+    <h3><?php echo "Title: ".$article->getTitle(); ?></h3>
 
     <?php if( $article->getContent() ): ?>
-        <p><?php echo "Content: "; echo $article->getContent(); ?></p>
+        <p><?php echo "Content: ".$article->getContent(); ?></p>
     <?php else: ?>
-        <p><?php echo "Description: "; echo $article->getDescription(); ?></p>
+        <p><?php echo "Description: ".$article->getDescription(); ?></p>
     <?php endif; ?>
 <?php endif; ?>
+
+<?php
+foreach ($block->getHelper()as$key=>$item)
+{
+    echo $key."=".$item."<br/>";
+};
